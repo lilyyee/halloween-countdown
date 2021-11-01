@@ -26,7 +26,7 @@ const announce = document.querySelector('.announce');
 const deadline = document.querySelector('.deadline');
 const items = document.querySelectorAll('.deadline-format h4');
 
-let futureDate = new Date(2021, 9, 31, 12, 00, 0);
+let futureDate = new Date(2022, 9, 31, 12, 00, 0);
 
 const weekday = weekdays[futureDate.getDay()];
 const month = months[futureDate.getMonth()];
@@ -35,7 +35,7 @@ const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes().toString().padStart(2, '0');
 
-announce.textContent = `Prepare to get scared on ${weekday}, ${month} ${date}, ${year} at ${hours}:${minutes}am.`;
+announce.textContent = `Prepare to get scared for ${weekday}, ${month} ${date}, ${year} at ${hours}:${minutes}am.`;
 
 // future time in milliseconds
 const futureTime = futureDate.getTime();
